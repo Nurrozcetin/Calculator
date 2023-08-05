@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    font-family:fantasy;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+body {
+    background-color:dimgrey;
+}
+
+.bigContainer {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.dark {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgb(7, 7,7);
+}
+
+#display {
+    margin: 0 15px;
+    height: 160px;
+    width: auto;
+    max-width: 280px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 45px;
+    margin-bottom: 15px;
+    overflow-x: scroll;
+}
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:lightpink;
+    transition: 0.3s;
+}
+
+.dark button.number:hover {
+    background-color: mediumslateblue;
+}
+
+.dark button#clear {
+    background-color:red;
+}
+
+.dark button#equal {
+    background-color: rgb(29, 156, 29);
+}
